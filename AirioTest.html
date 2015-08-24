@@ -1,0 +1,174 @@
+
+<!-- saved from url=(0052)http://yone2.net/wp-content/uploads/2014/12/List.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Airio test</title>
+    <script language="javascript" type="text/javascript">
+        <!--
+            //関数：FlashAirに対してHTTP通信 GETをする
+            function flashair_get( param ){
+                var request = new XMLHttpRequest();
+                request.open("GET", param, false);
+                request.send(null);
+                //通信結果
+                document.getElementById('RESULT').value += request.responseText;
+            }
+            //グローバル変数定義
+            var send_mess = "http://kyanroflashair/command.cgi?op=190&CTRL=0x1e&DATA=0x";
+            var p = 0x00;
+            //関数：任意のポートをHigh/Lowにする
+            function gpio_onoff(port){
+                switch( port ){
+                    case 1:		//Red
+                        p = 0x02;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+                    case 2:		//Green
+                        p = 0x08;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+                    case 3:		//Blue
+                        p = 0x04;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+
+                    case 4:		//Cyan
+                        p = 0x0C;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+                    case 5:		//Magenta
+                        p = 0x06;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+                    case 6:		//Yellow
+                        p = 0x0A;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+
+                    case 7:		//White
+                        p = 0x0E;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+                    case 8:		//Off
+                        p = 0x00;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+		    case 9:		//Off
+			window.location.reload();
+			break;
+                    case 10:		//Extra
+                        p = 0x10;
+                        url = send_mess + p.toString(16);
+                        flashair_get(url);
+                        break;
+                }
+//                document.getElementById('RESULT').value = p.toString(16);
+            }
+        // -->
+    </script>
+    <style type="text/css"></style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+    <body data-hasqtip="0" data-feedly-mini="yes" aria-describedby="iknow-qtip-0">
+Airio test<br><br>
+<input type="button" value="Red" onclick="gpio_onoff(1)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#ED1A3D;">
+<input type="button" value="Green" onclick="gpio_onoff(2)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#008000;">
+<input type="button" value="Blue" onclick="gpio_onoff(3)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#0067C0;"><br><br>
+<input type="button" value="Cyan" onclick="gpio_onoff(4)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#00FFFF;">
+<input type="button" value="Magenta" onclick="gpio_onoff(5)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#EC008C;">
+<input type="button" value="Yellow" onclick="gpio_onoff(6)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#FFD400;"><br><br>
+<input type="button" value="White" onclick="gpio_onoff(7)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#FFFFFF;">
+<input type="button" value="Off" onclick="gpio_onoff(8)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#000000;color:#ffffff;">
+<input type="button" value="Clear" onclick="gpio_onoff(9)" style="HEIGHT: 60px;WIDTH: 60px;background-color:#999999;"><br><br>
+<input type="text" id="RESULT" style="WIDTH: 400px;" value="結果＝"><br><br>
+[Clear]→[Off]でスライドスイッチの入力値を結果に表示します。
+    
+<div id="feedly-mini" title="feedly Mini tookit"></div><div id="iknow-qtip-0" class="iknow-qtip iknow-qtip-default iknow-qtip-light iknow-qtip-shadow iknow-qtip-rounded iknow-qtip-pos-bc iknow-qtip-fixed iknow-qtip-pos-tl" tracking="false" role="alert" aria-live="polite" aria-atomic="false" aria-describedby="iknow-qtip-0-content" aria-hidden="true" data-qtip-id="0" style="z-index: 2147483001;"><div class="iknow-qtip-tip" style="display: none;"><canvas></canvas></div><div class="iknow-qtip-content" id="iknow-qtip-0-content" aria-atomic="true"><section class="dictionary-tooltip-inner">
+  <div class="entries-list">
+    
+      
+        <article class="entry">
+          <div class="entry-column audio" data-lemma="red">
+            <span class="play-sound"></span>
+          </div>
+
+          <div class="entry-column definition">
+            <p>
+              <span class="lemma">
+                red
+              </span>
+
+              <span class="part-of-speech" data-type="adjective">
+                (形)
+              </span>
+
+              <span class="definition-text">
+                赤い、真っ赤な
+              </span>
+
+              
+            </p>
+          </div>
+
+          <div class="entry-column feedback">
+            <span class="flag-entry" data-form="red" data-lemma="red" data-translation="赤い、真っ赤な" data-part-of-speech="adjective"></span>
+          </div>
+        </article>
+      
+        <article class="entry">
+          <div class="entry-column audio" data-lemma="red">
+            <span class="play-sound"></span>
+          </div>
+
+          <div class="entry-column definition">
+            <p>
+              <span class="lemma">
+                red
+              </span>
+
+              <span class="part-of-speech" data-type="noun">
+                (名)
+              </span>
+
+              <span class="definition-text">
+                赤色
+              </span>
+
+              
+            </p>
+          </div>
+
+          <div class="entry-column feedback">
+            <span class="flag-entry" data-form="red" data-lemma="red" data-translation="赤色" data-part-of-speech="noun"></span>
+          </div>
+        </article>
+      
+    
+  </div>
+</section>
+
+<section class="iknow-branding">
+  <a href="http://iknow.jp/" target="_blank">
+    Powered by <span class="brand">iKnow!</span>
+  </a>
+</section>
+</div></div></body></html>
